@@ -19,7 +19,6 @@
     "electron": "^4.0.7"
   },
   "dependencies": {
-    "discord-rich-presence": "0.0.8",
-    "electron-packager": "^13.1.1"
+    "discord-rich-presence": "0.0.8"
   }
 }
