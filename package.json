@@ -1,0 +1,24 @@
+{
+  "name": "mario-paint-rich-presence",
+  "version": "1.0.0",
+  "description": "A simple tool that can show others on Discord what you're working on!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/seymourschlong/mario-rp",
+  "keywords": [
+    "Electron",
+    "mario",
+    "paint",
+    "discord"
+  ],
+  "author": "seymour",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.7"
+  },
+  "dependencies": {
+    "discord-rich-presence": "0.0.8"
+  }
+}

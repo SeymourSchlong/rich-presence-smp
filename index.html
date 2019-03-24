@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Super Mario Paint Rich Presence</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="extra.css">
+        <script src="renderer.js"></script>
+    </head>
+    <body onload="initialize();">
+
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="2">Mario Paint Rich Presence</th>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Song title:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="100" id="title" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Origin (optional):</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="100" id="origin" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Large Image:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <!--<textarea type="text" maxlength="16" id="title" class="input" rows="1" style="resize: none;"></textarea>-->
+                        <select id="large_img"></select>
+                        <input type="checkbox" id="enable_large-small" name="large_sm" value="large_sm">
+                        <label for="enable_large-small">small</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Small Image:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <!--<textarea type="text" maxlength="16" id="title" class="input" rows="1" style="resize: none;"></textarea>-->
+                        <select id="small_img"></select>
+                        <input type="checkbox" id="enable_small-small" name="small_sm" value="small_sm">
+                        <label for="enable_small-small">small</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Large Image Text:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="100" id="large_text" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Small Image Text:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="100" id="small_text" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Parts Complete:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="2" id="complete" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Thing to change -->
+                        <span>Total Parts:</span>
+                    </td>
+                    <td>
+                        <!-- Input textbox -->
+                        <textarea type="text" maxlength="2" id="total" class="input" rows="1" style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="submit" onclick="reactPressed();" type="button" id="submit" value="Update Presence"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
